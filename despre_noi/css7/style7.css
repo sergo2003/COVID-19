@@ -1,0 +1,142 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color:white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* Container */
+
+.container {
+    width: 85%;
+    max-width: 11110px;
+    max-height: 111px;
+    margin: 0 auto;
+}
+
+
+/* Intro */
+
+.intro__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 85px;
+    color: #fcff2e;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* Nav */
+
+.nav {
+    font-size: 34px;
+    font-weight: 750;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 22px;
+    position: relative;
+    color: #fbff00;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 102%;
+    height: 4px;
+    background-color: #00FFFF;
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    transition: opacity .1s linear;
+    opacity: 1;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 0;
+}
+
+
+/* Text */
+
+.text_info {
+    font-family: 'Rubik', cursive;
+    font-size: 27px;
+    font-weight: 700;
+    width: 193vh;
+    height: 150vh;
+    color: white;
+    margin: 0vh auto;
+}
+
+
+/* Imagine */
+
+.imagine {
+    align-items: center;
+}
+
+
+/* Maps */
+
+.maps iframe {
+    width: 95%;
+    height: 600px;
+}
+
+.adress {
+    font-family: 'consolas';
+    font-size: 56px;
+    color: #00FFFF;
+    text-align: center;
+    padding-top: 10px;
+}

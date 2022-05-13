@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+/* Container */
+
+.container {
+    width: 85%;
+    max-width: 11110px;
+    max-height: 111px;
+    margin: 0 auto;
+}
+
+
+/* Nav */
+
+.nav {
+    font-size: 34px;
+    font-weight: 750;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 22px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 102%;
+    height: 4px;
+    background-color: deeppink;
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    transition: opacity .1s linear;
+    opacity: 1;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 0;
+}
+
+
+/* Nume */
+
+.nume_catedra {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* Text */
+
+.text_info {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width: 190vh;
+    height: 124vh;
+    margin: 0vh auto;
+}
+
+.text_info_2 {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width: 190vh;
+    height: 123vh;
+    margin: 0vh auto;
+}
+
+.text_info_3 {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width: 190vh;
+    height: 123vh;
+    margin: 0vh auto;
+}
+
+.text_info_4 {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width: 190vh;
+    height: 123vh;
+    margin: 0vh auto;
+}
+
+.text_info_5 {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width: 190vh;
+    height: 123vh;
+    margin: 0vh auto;
+}
+
+
+/* Navigatia */
+
+.navigatia {
+    font-family: 'Rubik', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5vh auto;
+    background-color: #ffffff7d;
+    margin: 0vh 114vh 0vh 0vh;
+    position: relative;
+}
+
+
+/*buton*/
+
+.back-to-top {
+    position: fixed;
+    right: 35px;
+    bottom: 40px;
+    width: 55px;
+    height: 55px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: #629460;
+}
+
+.back-to-top: hover,
+.back-to-top: focus {
+    filter: brightness(1.5);
+    outline: none;
+}
+
+.back-to-top:: before,
+.back-to-top::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-to-top::before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #f5f0f6;
+}
+
+.back-to-top::after {
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid #f5f0f6;
+    border-left: 5px solid #f5f0f6;
+}
